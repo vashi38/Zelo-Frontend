@@ -1,9 +1,6 @@
-# CabService
-Simple Cab service UI
+# Zelo-Frontend
 
 Hello Everyone
-
--This is an website for Cab service
 
 -some instructions to run this :
 
