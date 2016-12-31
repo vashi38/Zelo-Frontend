@@ -1,0 +1,16 @@
+<div>
+		<div class="well photos col-lg-6 col-lg-offset-3" ng-repeat = "pic in images.objects">
+			<div>
+				<img ng-src="{{pic.ownerImg}}" class='img-circle col-lg-2 contact-img'/>
+				<b >{{pic.username}}</b>
+				</br><label ng-bind="pic.date | date:'dd MMM yyyy'"></label>
+			</div>
+			</br>
+			<img class = "photo"  width='100%' ng-src="{{pic.imageUrl}}"/>
+		</div>
+<!--		<input type="button" class="btn btn-lg col-lg-4 col-lg-offset-4" value="Load More..." ng-click="images.loadMore()"/>-->
+		<img src="images/loading.gif" class="col-lg-6 col-lg-offset-3" ng-show="!images.done"/>	
+		
+		<img src="images/loading.gif" class="col-lg-6 col-lg-offset-3" ng-show="!images.done"/>	
+		
+</div>
