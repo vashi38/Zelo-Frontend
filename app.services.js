@@ -14,7 +14,7 @@ app.service("APIServices",function($http,$state){
 				nojsoncallback: 1
 			}
 		}).then(function(response){
-			
+			console.log(response.data);
 			return (response.data);
 		});
 	}

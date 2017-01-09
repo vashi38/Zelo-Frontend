@@ -6,7 +6,8 @@
 				</br><label ng-bind="pic.date | date:'dd MMM yyyy'"></label>
 			</div>
 			</br>
-			<img class = "photo"  width='100%' ng-src="{{pic.imageUrl}}"/>
+			<img  class = "photo"   ng-src="{{pic.imageUrl}}" ng-if="!pic.showOriginal" ng-style="pic.styleObj"/>
+			<img class = "photo"  width='100%' ng-src="{{pic.ActualImageUrl}}" ng-if="pic.showOriginal" style="display:none"/>
 		</div>
 <!--		<input type="button" class="btn btn-lg col-lg-4 col-lg-offset-4" value="Load More..." ng-click="images.loadMore()"/>-->
 		<img src="images/loading.gif" class="col-lg-6 col-lg-offset-3" ng-show="!images.done"/>	
